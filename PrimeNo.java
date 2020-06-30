@@ -6,10 +6,11 @@ public class PrimeNo {
             System.out.println(+num+" ::Is prime number\n");
             return true;
         }
-        if (num % 2 == 0 || num % 3 == 0) {
+        else if (num % 2 == 0 || num % 3 == 0) {
             System.out.println(+num+" ::Is not prime number\n");
             return false;
         }
+        else
         for (int i = 3; i < Math.sqrt(num); i += 2) {
             if (num % Math.sqrt(num) == 0 || num % i == 0) {
                 System.out.println(+num+" ::Is not prime number\n");
